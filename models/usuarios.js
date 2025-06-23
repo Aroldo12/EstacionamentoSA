@@ -11,7 +11,10 @@ export const Usuarios = database.define('usuarios',{
      senha: DataTypes.STRING,
      telefone: DataTypes.STRING,
      tipo_usuario: {
-        type: DataTypes.ENUM('Adimim', 'Cliente')
+        type: DataTypes.ENUM('Adimin', 'Cliente')
      }
+     
 
-})
+},{
+    timestamps:true, 
+});
